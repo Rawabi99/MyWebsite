@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Code Adventure - الأصدقاء</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- Fonts Style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,600&display=swap" rel="stylesheet">
+  <!-- Font Awesome Stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!-- Custom Styles for This Template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- Responsive Style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  
+  <style>
+    .friends_section {
+      padding: 60px 0;
+    }
+
+    .friends_section .section-header {
+      margin-bottom: 40px;
+    }
+
+    .friends_section .section-header h2 {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .friends_section .section-header p {
+      font-size: 1.2em;
+      color: #666;
+    }
+
+    .friend-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+      margin-bottom: 30px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .friend-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .friend-card i {
+      font-size: 60px;
+      color: #007bff;
+      margin-bottom: 15px;
+    }
+
+    .friend-card .card-body h5 {
+      font-weight: 700;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .friend-card .card-body p {
+      color: #555;
+      font-size: 1em;
+      margin-bottom: 20px;
+    }
+
+    .friend-card .card-body a {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .friend-card .card-body a:hover {
+      background-color: #0056b3;
+      box-shadow: 0px 4px 15px rgba(0, 123, 255, 0.4);
+    }
+
+    @media (max-width: 767px) {
+      .friend-card i {
+        font-size: 50px;
+      }
+    }
+  </style>
+</head>
+
+<body class="sub_page">
+  <div class="top_container">
+    <!-- Header Section Starts -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Code Adventure
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">الرئيسية </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">الدورات</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="admission.html">تسجيل</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="why.html">الأصدقاء</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">تواصل معنا</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header Section -->
+  </div>
+  <!-- End Top Container -->
+
+  <div class="common_style">
+    <!-- Friends Section -->
+    <section class="friends_section">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>الأصدقاء</h2>
+          <p>تعرف على أصدقائك أو الشركاء المحتملين في تعلم البرمجة</p>
+        </div>
+        <div class="row">
+          <!-- Friend 1 -->
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="friend-card">
+              <i class="fa fa-user"></i>
+              <div class="card-body">
+                <h5 class="card-title">محمد أحمد</h5>
+                <p>محمد خبير في HTML و CSS ومستعد للمساعدة في مشاريع تطوير الويب.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal"
+                  data-recipient="محمد أحمد" data-email="mohamed@example.com">تواصل معه</button>
+              </div>
+            </div>
+          </div>
+          <!-- Friend 2 -->
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="friend-card">
+              <i class="fa fa-user"></i>
+              <div class="card-body">
+                <h5 class="card-title">سارة علي</h5>
+                <p>سارة متخصصة في تطوير الواجهات التفاعلية باستخدام JavaScript.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal"
+                  data-recipient="سارة علي" data-email="sara@example.com">تواصل معها</button>
+              </div>
+            </div>
+          </div>
+          <!-- Friend 3 -->
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="friend-card">
+              <i class="fa fa-user"></i>
+              <div class="card-body">
+                <h5 class="card-title">خالد سامي</h5>
+                <p>خالد يمتلك خبرة في بايثون ويعمل في مجالات التعلم الآلي.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal"
+                  data-recipient="خالد سامي" data-email="khaled@example.com">تواصل معه</button>
+              </div>
+            </div>
+          </div>
+          <!-- Friend 4 -->
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="friend-card">
+              <i class="fa fa-user"></i>
+              <div class="card-body">
+                <h5 class="card-title">أميرة يوسف</h5>
+                <p>أميرة تعمل كمطوّرة ويب وهي خبيرة في تصميم UX/UI.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal"
+                  data-recipient="أميرة يوسف" data-email="amira@example.com">تواصل معها</button>
+              </div>
+            </div>
+          </div>
+          <!-- Friend 5 -->
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="friend-card">
+              <i class="fa fa-user"></i>
+              <div class="card-body">
+                <h5 class="card-title">أحمد علي</h5>
+                <p>أحمد يعمل كمدرّب برمجة ويمكنه مساعدتك في التعلم.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal"
+                  data-recipient="أحمد علي" data-email="ahmed@example.com">تواصل معه</button>
+              </div>
+            </div>
+          </div>
+          <!-- Friend 6 -->
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="friend-card">
+              <i class="fa fa-user"></i>
+              <div class="card-body">
+                <h5 class="card-title">منى يوسف</h5>
+                <p>منى خريجة علوم الحاسب ولديها شغف بالتطوير البرمجي.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal"
+                  data-recipient="منى يوسف" data-email="mona@example.com">تواصل معها</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Friends Section -->
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">تواصل مع <span id="recipientName"></span></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="message">رسالتك</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="اكتب رسالتك هنا"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">أرسل</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Contact Modal -->
+  </div>
+  <!-- End Common Style -->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- Custom Script -->
+  <script>
+    $('#contactModal').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget); // Button that triggered the modal
+      var recipient = button.data('recipient'); // Extract info from data-* attributes
+      var email = button.data('email'); // Extract info from data-* attributes
+      var modal = $(this);
+      modal.find('.modal-title #recipientName').text(recipient);
+      modal.find('#contactForm').on('submit', function (e) {
+        e.preventDefault();
+        // Handle form submission (e.g., send the message via AJAX)
+        alert('رسالتك إلى ' + recipient + ' تم إرسالها بنجاح!');
+        modal.modal('hide');
+      });
+    });
+  </script>
+</body>
+
+</html>
