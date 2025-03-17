@@ -1,8 +1,11 @@
 <?php
-$servername = "sql212.infinityfree.com"; // إذا كنت على استضافة مجانية قد يكون السيرفر مختلفًا، تحقق منه
-$username = "if0_38521780_XXX";
-$password = "MWotliZ7jAG";
-$database = "if0_38521780";
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+$servername = "localhost"; // السيرفر سيكون محليًا
+$username = "root"; // اسم المستخدم الافتراضي في XAMPP
+$password = ""; // بدون كلمة مرور افتراضيًا في XAMPP
+$database = "if0_38521780"; // ضع هنا اسم قاعدة البيانات التي أنشأتها
 
 // إنشاء الاتصال
 $conn = new mysqli($servername, $username, $password, $database);
@@ -14,4 +17,6 @@ if ($conn->connect_error) {
 
 // ضبط الترميز لدعم العربية
 $conn->set_charset("utf8mb4");
+
+echo "تم الاتصال بنجاح!";
 ?>
