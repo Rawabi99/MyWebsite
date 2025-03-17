@@ -14,39 +14,29 @@
 
   <title>Code Advanture</title>
 
-
-
-  <!-- bootstrap core css -->
+  <!-- Bootstrap core CSS -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-  <!-- progress barstle -->
+  <!-- Progress bar style -->
   <link rel="stylesheet" href="css/css-circular-prog-bar.css">
-  <!-- fonts style -->
+  <!-- Fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,600&display=swap" rel="stylesheet">
-  <!-- font wesome stylesheet -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
+  <!-- Responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-
-
-
-
-  <link rel="stylesheet" href="css/css-circular-prog-bar.css">
-
 
 </head>
 
 <body class="sub_page">
-  <div class="top_container ">
-    <!-- header section strats -->
+  <div class="top_container">
+    <!-- Header section starts -->
     <header class="header_section">
       <div class="container">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
           <a class="navbar-brand" href="index.html">
-            <span>
-              Code Advanture
-            </span>
+            <span>Code Advanture</span>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,75 +45,63 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav  ">
+              <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html" style="color: #003366;font-size: 18px;"> الرئيسية <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.html" style="color: #003366; font-size: 18px;">الرئيسية</a>
                 </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="about.html" style="color: #003366;font-size: 18px;"> الألعاب </a>
-                </li>
-
-                <li class="nav-item ">
-                  <a class="nav-link" href="admission.html" style="color: #003366;font-size: 18px;">دورات تعليمية</a>
-                </li>
-
                 <li class="nav-item">
-                  <a class="nav-link" href="why.html" style="color: #003366;font-size: 18px;"> الأصدقاء </a>
+                  <a class="nav-link" href="about.html" style="color: #003366; font-size: 18px;">الألعاب</a>
                 </li>
-
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html" style="color: #003366;font-size: 18px;">تواصل معنا</a>
+                  <a class="nav-link" href="admission.html" style="color: #003366; font-size: 18px;">دورات تعليمية</a>
                 </li>
-
+                <li class="nav-item">
+                  <a class="nav-link" href="why.html" style="color: #003366; font-size: 18px;">الأصدقاء</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html" style="color: #003366; font-size: 18px;">تواصل معنا</a>
+                </li>
               </ul>
             </div>
         </nav>
       </div>
     </header>
-
   </div>
-  <!-- end header section -->
+  <!-- End header section -->
 
-
-
-  <!-- contact section -->
-
-  <section class="contact_section ">
-
+  <!-- Contact section -->
+  <section class="contact_section">
     <div class="container">
-
       <div class="row">
         <div class="col-md-6">
           <div class="d-flex justify-content-center d-md-block">
-            <h2>
-              تواصل معنا 
-            </h2>
+            <h2>تواصل معنا</h2>
           </div>
-          <form action="">
+
+          <!-- تم التعديل هنا -->
+          <form action="config.php/add_contact.php" method="POST">
             <div class="contact_form-container">
               <div>
                 <div>
-                  <input type="text" placeholder="Name">
+                  <input type="text" name="name" placeholder="الاسم" required>
                 </div>
                 <div>
-                  <input type="email" placeholder="Email">
+                  <input type="email" name="email" placeholder="البريد الإلكتروني" required>
                 </div>
                 <div>
-                  <input type="text" placeholder="Phone Number">
+                  <input type="text" name="phone" placeholder="رقم الهاتف">
                 </div>
                 <div class="mt-5">
-                  <input type="text" placeholder="Message">
+                  <textarea name="message" placeholder="الرسالة" required></textarea>
                 </div>
                 <div class="mt-5">
-                  <button type="submit">
-                    ارسال
-                  </button>
+                  <button type="submit">إرسال</button>
                 </div>
               </div>
-
             </div>
-
           </form>
+          <!-- نهاية التعديلات -->
+          
         </div>
         <div class="col-md-6">
           <div class="contact_img-box">
@@ -133,21 +111,19 @@
       </div>
     </div>
   </section>
-  <!-- end contact section -->
- 
-  <!-- footer section -->
+  <!-- End contact section -->
+
+  <!-- Footer section -->
   <section class="container-fluid footer_section">
     <p>
-      Copyright &copy; 2025  All Rights Reserved By
+      Copyright &copy; 2025 All Rights Reserved By
       <a href="https://html.design/"></a>
     </p>
   </section>
-  <!-- footer section -->
+  <!-- End footer section -->
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
 
-
 </body>
-
 </html>
